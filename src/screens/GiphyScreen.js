@@ -15,7 +15,6 @@ const GiphyScreen = () => {
         rating: 'G'
       }
     });
-    // console.log('bubulina', response.data.data[0].images.downsized_large.url);
     setImages(response.data.data);
   }
 
