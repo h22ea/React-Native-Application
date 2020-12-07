@@ -2,11 +2,12 @@ import React from 'react';
 import {View, StyleSheet, Text, Image} from 'react-native';
 
 const GifView = (props) => {
-    console.log('inside Gif View', props.gifs[0]);
+    console.log(props.gifs);
+    let fukU = `${props.gifs[0]}`
     return(
         <View>
-            <Text>Gifff</Text>
-            {/* <Image style={styles.gif} source={{uri:  }}></Image> */}
+            <Text>{fukU}</Text>
+            <Image style={styles.gif} source={{uri:  props.gifs[0]}}></Image>
         </View>
     );
 }

@@ -9,6 +9,10 @@ const HomeScreen = ({navigation}) => {
         onPress={()=>{navigation.navigate('Giphy')}}
         title="Click here for kewl GIFs">
       </Button>
+      <Button
+        onPress={()=>{navigation.navigate('Nebulae')}}
+        title="Click to entert the void.">
+      </Button>
     </View>
   );
 };

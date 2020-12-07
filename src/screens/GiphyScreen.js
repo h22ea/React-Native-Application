@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {View, StyleSheet, Button} from 'react-native';
 import giphy from '../api/giphy';
 import GifView from '../components/GifView';
-import { FlatList } from 'react-native-gesture-handler';
 
 const GiphyScreen = () => {
   const [images, setImages] = useState([]);
