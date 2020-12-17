@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text, StyleSheet, Button, View } from 'react-native';
+import { Text, StyleSheet, Button, SafeAreaView } from 'react-native';
 
 const HomeScreen = ({navigation}) => {
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.text}>A thousand greetings, React Native!</Text>  
       <Button
         onPress={()=>{navigation.navigate('Giphy')}}
@@ -13,11 +13,14 @@ const HomeScreen = ({navigation}) => {
         onPress={()=>{navigation.navigate('Nebulae')}}
         title="Click to entert the void.">
       </Button>
-    </View>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
   text: {
     fontSize: 30,
     textAlign: "center",
