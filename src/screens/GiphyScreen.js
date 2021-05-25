@@ -3,13 +3,15 @@ import {View, StyleSheet, Button} from 'react-native';
 import giphy from '../api/giphy';
 import GifView from '../components/GifView';
 
+const GIPHY_TOKEN = process.env.GIPHY_TOKEN;
+
 const GiphyScreen = () => {
   const [images, setImages] = useState([]);
 
   const searchForGifs= async () => {
     const response = await giphy.get('/trending', {
       params: {
-        api_key: 'Y8N2iAFFHHkUmEQvsnutVF3t1vSEll2Q',
+        api_key: GIPHY_TOKEN,
         limit: 1,
         rating: 'G'
       }
