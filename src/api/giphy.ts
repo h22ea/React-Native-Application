@@ -1,9 +1,10 @@
 import axios from 'axios';
+import { links } from '../constants/links';
 
-const GIPHY_TOKEN = process.env.GIPHY_TOKEN;
+const GIPHY_TOKEN: string = process.env.GIPHY_TOKEN;
 
 export default axios.create({
-    baseURL: 'https://api.giphy.com/v1/stickers',
+    baseURL: links.giphyApi,
     headers: {
         Authorization: `Bearer ${GIPHY_TOKEN}`
     },

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 
-const NebulaeView = (props) => {
+const NebulaeView = () => {
     return(
         <View>
             <Text>
