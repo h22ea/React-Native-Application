@@ -1,4 +1,4 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation-stack';
 import HomeScreen from './src/screens/HomeScreen';
 import GiphyScreen from './src/screens/GiphyScreen';
 import NebulaeScreen from './src/screens/NebulaeScreen';
